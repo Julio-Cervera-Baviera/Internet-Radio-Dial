@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Antique Radio Dial</title>
+
+<style type="text/css">
+
+#dhtmltooltip{
+position: absolute;
+width: 130px;
+border: 2px solid black;
+padding: 2px;
+background-color: lightyellow;
+visibility: hidden;
+z-index: 100;
+/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+
+</style>
+
+</head>
+
+<BODY BGCOLOR="white"
+style="background-image: url(earth.globe.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;">
+
+<table width="100%" border="1">
+<tr>
+<td>
+
+<br>
+
+<div id="dhtmltooltip"></div>
+
+<script type="text/javascript">
+
+/***********************************************
+* Cool DHTML tooltip script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var offsetxpoint=-60 //Customize x offset of tooltip
+var offsetypoint=20 //Customize y offset of tooltip
+var ie=document.all
+var ns6=document.getElementById && !document.all
+var enabletip=false
+if (ie||ns6)
+var tipobj=document.all? document.all["dhtmltooltip"] : document.getElementById? document.getElementById("dhtmltooltip") : ""
+
+function ietruebody(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function ddrivetip(thetext, thecolor, thewidth){
+if (ns6||ie){
+if (typeof thewidth!="undefined") tipobj.style.width=thewidth+"px"
+if (typeof thecolor!="undefined" && thecolor!="") tipobj.style.backgroundColor=thecolor
+tipobj.innerHTML=thetext
+enabletip=true
+return false
+}
+}
+
+function positiontip(e){
+if (enabletip){
+var curX=(ns6)?e.pageX : event.clientX+ietruebody().scrollLeft;
+var curY=(ns6)?e.pageY : event.clientY+ietruebody().scrollTop;
+//Find out how close the mouse is to the corner of the window
+var rightedge=ie&&!window.opera? ietruebody().clientWidth-event.clientX-offsetxpoint : window.innerWidth-e.clientX-offsetxpoint-20
+var bottomedge=ie&&!window.opera? ietruebody().clientHeight-event.clientY-offsetypoint : window.innerHeight-e.clientY-offsetypoint-20
+
+var leftedge=(offsetxpoint<0)? offsetxpoint*(-1) : -1000
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<tipobj.offsetWidth)
+//move the horizontal position of the menu to the left by it's width
+tipobj.style.left=ie? ietruebody().scrollLeft+event.clientX-tipobj.offsetWidth+"px" : window.pageXOffset+e.clientX-tipobj.offsetWidth+"px"
+else if (curX<leftedge)
+tipobj.style.left="5px"
+else
+//position the horizontal position of the menu where the mouse is positioned
+tipobj.style.left=curX+offsetxpoint+"px"
+
+//same concept with the vertical position
+if (bottomedge<tipobj.offsetHeight)
+tipobj.style.top=ie? ietruebody().scrollTop+event.clientY-tipobj.offsetHeight-offsetypoint+"px" : window.pageYOffset+e.clientY-tipobj.offsetHeight-offsetypoint+"px"
+else
+tipobj.style.top=curY+offsetypoint+"px"
+tipobj.style.visibility="visible"
+}
+}
+
+function hideddrivetip(){
+if (ns6||ie){
+enabletip=false
+tipobj.style.visibility="hidden"
+tipobj.style.left="-1000px"
+tipobj.style.backgroundColor=''
+tipobj.style.width=''
+}
+}
+
+document.onmousemove=positiontip
+
+</script>
+
+<br><center><b><hr></b></center><b></br>
+
+<table width="100%">
+<tr>
+<td>
+
+<table width="100%">
+<tr>
+
+<td width="2%"><center>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/Orthodox.Radio.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Orthodox Radio</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  01  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/Radio.Mahoor.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Mahoor</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  02  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Ambient/Soma.FM.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Soma FM</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  03  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Ambient/Zero.Beat.Zone.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Zero Beat Zone</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  04  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Ambient/Chillky.Way.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Chillky Way</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  05  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Ambient/Still.Stream.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Still Stream</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  06  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Ambient/Hirschmilch_Radio-Chill_Out.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Hirschmilch Radio Chill Out</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  07  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Ambient/Radio.Nirvana.Meditation.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Nirvana Meditation</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  08  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Ambient/Radio.Nirvana.Chill.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Nirvana Chill</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  09  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Ambient/Loca.FM.Ambient.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Loca FM Ambient</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  10  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Ambient/Concertzender.De.Gehoorde.Stilte.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Concertzender De Gehoorde Stilte</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  11  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Ambient/Ambient.Sleeping.Pill.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Ambient Sleeping Pill</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  12  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="2%"><center>
+</center></td>
+
+</tr>
+</table>
+
+<table width="100%">
+<tr>
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+</td>
+
+<td width="20%">
+
+<br><center><b><font size="2">Longwave Band</b></font></center><br>
+
+</td>
+
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+</td>
+</tr>
+</table>
+
+<table width="100%">
+<tr>
+
+<td width="2%"><center>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/Blue.Bossa.Nova.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Blue Bossa Nova</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  13  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/Klassic.Radio.Brazil.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Klassic Radio Brazil</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  14  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/RMN.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>RMN</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  15  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/Studio.92.FM.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Studio 92 FM</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  16  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/Brasilia.Super.Radio.FM.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Brasilia Super Radio FM</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  17  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/Scala.Web.Radio.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Scala Web Radio</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  18  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/Radio.Coast.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Coast</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  19  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/Radio.Enciclopedia.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Enciclopedia</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  20  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/KLUX.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>KLUX</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  21  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/WEZI.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>WEZI</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  22  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/WLML.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>WLML</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  23  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/Easy.Listening/Amityville.Community.Radio.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Amityville Community Radio</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  24  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="2%"><center>
+</center></td>
+
+</tr>
+</table>
+
+<table width="100%">
+<tr>
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+</td>
+
+<td width="20%">
+
+<br><center><b><font size="2">Mediumwave Band</b></font></center><br>
+
+</td>
+
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+</td>
+</tr>
+</table>
+
+<table width="100%">
+<tr>
+
+<td width="2%"><center>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/International/Muravideki.Magyar.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Muravideki Magyar</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  25  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/International/Antena.Satelor.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Antena Satelor</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  26  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/International/Radio.Koprivina.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Koprivina</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  27  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/International/Radio.Luxembourg.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Luxembourg</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  28  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/International/Slovak.Radio.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Slovensko</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  29  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/International/ABC.Radio.Australia.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Australia World Service</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  30  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/International/BBC.World.Service.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>BBC World Service</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  31  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/International/RFI.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio France International</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  32  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/International/Veseljak.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Veseljak</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  33  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/International/Kurosawa.Toshio.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Kurosawa Toshio</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  34  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/International/Hrvatski.Radio.Vukovar.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Hrvatski Radio Vukovar</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  35  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/International/Radio.Continental.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Continental</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  36  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="2%"><center>
+</center></td>
+
+</tr>
+</table>
+
+<table width="100%">
+<tr>
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+</td>
+
+<td width="20%">
+
+<br><center><b><font size="2" color="black">Shortwave Band One</b></font></center><br>
+
+</td>
+
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%">
+<tr>
+
+
+<td width="2%"><center>
+</center></td>
+
+
+<td width="8%"><center>
+<a href="../stations/International/Folk.Radio.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Folk Radio</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  37  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Radio.Capris.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Capris</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  38  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Radio.Romania.International.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Romania International</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  39  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Radio.Eger.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Eger</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  40  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/RAI.FD4.Leggera.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>RAI FD4 Leggera</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  41  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Polskie.Radio.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Polskie Radio</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  42  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/SWR4.Rheinland.Pfalz.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>SWR4 Rheinland Pfalz</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  43  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Ukraine.3rd.Prog.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Ukraine 3rd Prog</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  44  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Vorosmarty.Radio.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Vorosmarty Radio</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  45  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Radio.Taino.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Taino</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  46  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Radio.Camargo.Cinti.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Camargo Cinti</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  47  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Peru.Folk.Radio.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Peru Folk Radio</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  48  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+<td width="2%"><center>
+</center></td>
+
+
+</tr>
+</table>
+
+
+
+
+
+<table width="100%">
+<tr>
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+</td>
+
+<td width="20%">
+
+<br><center><b><font size="2">Shortwave Band Two</b></font></center><br>
+
+</td>
+
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+</td>
+</tr>
+</table>
+
+
+
+
+
+<table width="100%">
+<tr>
+
+
+<td width="2%"><center>
+</center></td>
+
+
+<td width="8%"><center>
+<a href="../stations/International/Bum.Bum.Radio.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Bum Bum Radio</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  49  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Radio.Sunshine.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Sunshine</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  50  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/RA1.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Slovenia One</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  51  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Naxi.Evergreen.Radio.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Naxi Evergreen Radio</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  52  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/FM1.Melody.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>FM 1 Melody</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  53  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Kalman.Radio.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Kalman Radio</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  54  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/RTE1.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>RTE1</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  55  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Jazz/Jazzy.103.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Jazzy 103</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  56  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Jazz/WSBZ.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>WSBZ</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  57  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Jazz/jazz.fm.uk.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Jazz FM UK</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  58  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Jazz/bestsmoothjazz.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Best Smooth Jazz</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  59  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Jazz/DR_P8.mp3.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Danish Jazz</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  60  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="2%"><center>
+</center></td>
+
+
+
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+<table width="100%">
+<tr>
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+</td>
+
+<td width="20%">
+
+<br><center><b><font size="2">Short Wave Band Three</b></font></center><br>
+
+</td>
+
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+</td>
+</tr>
+</table>
+
+
+
+
+
+<table width="100%">
+<tr>
+
+
+<td width="2%"><center>
+</center></td>
+
+
+<td width="8%"><center>
+<a href="../stations/American.Standards/WHLI.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>WHLI</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  61  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/American.Standards/KIXI.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>KIXI</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  62  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/American.Standards/KABL.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>KABL</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  63  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/American.Standards/KAAM.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>KAAM</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  64  &nbsp;&nbsp;</font></b>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Polka/247Polka.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>24-7 Polka Radio</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  65  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Polka/WRJQ.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>WRJQ</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  66  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Polka/Radio.Dechovka.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Dechovka</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  67  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Retro.80/In.Club.Peru.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>In Club Peru</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  68  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Retro.80/Andys.80s.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Andys 80s</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  69  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Retro.80/Gem.Radio.New.Wave.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Gem Radio New Wave</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  70  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Trance/RMI.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>RMI</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  71  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/Trance/Puls.ASDL.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Pulse Radio France</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  72  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="2%"><center>
+</center></td>
+
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+<table width="100%">
+<tr>
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+</td>
+
+<td width="20%">
+
+<br><center><b><font size="2">Short Wave Band Four</b></font></center><br>
+
+</td>
+
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+<table width="100%">
+<tr>
+
+
+<td width="2%"><center>
+</center></td>
+
+
+<td width="8%"><center>
+<a href="../stations/International/NRK.Radio.Folkemusik.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>NRK Radio Folkemusik</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  73  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/Radio.Taino.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Radio Taino</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  74  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/International/RTBF.60s.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>RTBF 60s</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  75  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/USA/KDKK.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>KDKK</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  76  &nbsp;&nbsp;</font></b>
+
+
+
+<td width="8%"><center>
+<a href="../stations/USA/WQXC.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>WQXC</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  77  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/USA/WMID.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>WMID</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  78  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/USA/KRXX.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>KRXX Alaska</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  79  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/USA/WGCM-AM.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Cruising 60s</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  80  &nbsp;&nbsp;</font></b>
+</center></td>
+
+
+
+<td width="8%"><center>
+<a href="../stations/USA/WROA.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>WROA</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  81  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/USA/KXRG.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>KXRG Hawaii</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  82  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/USA/WQBB.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>BOB 105</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  83  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="8%"><center>
+<a href="../stations/USA/WCSN.m3u" STYLE="text-decoration: none"
+onMouseover="ddrivetip('<center>Sunny 105</center>')"; onMouseout="hideddrivetip()">
+<b><font size="3" color="black">&nbsp;&nbsp;  84  &nbsp;&nbsp;</font></b>
+</center></td>
+
+<td width="2%"><center>
+</center></td>
+
+</tr>
+</table>
+
+<table width="100%">
+<tr>
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+</td>
+
+<td width="20%">
+
+<br><center><b><font size="2">Television Band</b></font></center><br>
+
+</td>
+
+<td width="40%">
+
+<br><center><b><hr></b></center><br>
+
+</td>
+</tr>
+</table>
+
+<br>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+
